@@ -381,7 +381,244 @@ System.out.println(a++ + ++a);
 
 ---
 
-# 🚀 End Note
+# 🚀 Java Error Debugging Challenges + MCQ Test
 
-Master these basics = 50% of placement coding cleared.
+---
+
+# 🔥 Part 1: 50 Error Debugging Challenges (Increasing Difficulty)
+
+## 🟢 Level 1 (Basic Syntax Errors)
+
+1. `System.out.println("Hello")`
+2. `system.out.println("Hi");`
+3. `int a = 10.5;`
+4. `char c = "A";`
+5. `boolean b = 1;`
+6. `int a; System.out.println(a);`
+7. `final int x = 10; x = 20;`
+8. `byte b = 130;`
+9. `int x = (int)"123";`
+10. `System.out.println("Hello" + );`
+
+---
+
+## 🟡 Level 2 (Type & Casting Errors)
+
+11. `byte b = 100; b = b * 2;`
+12. `int a = 10/0;`
+13. `double d = 10/0;`
+14. `int x = (int)10.9 + 5.1;`
+15. `char c = 65536;`
+16. `int x = (int)("123");`
+17. `boolean b = "true";`
+18. `int x = true;`
+19. `String s = 10;`
+20. `double d = 10/3;`
+
+---
+
+## 🟠 Level 3 (Runtime Errors)
+
+21. `int a = 10, b = 0; System.out.println(a/b);`
+22. `String s = null; System.out.println(s.length());`
+23. `int[] arr = new int[3]; System.out.println(arr[5]);`
+24. `String s = "Java"; System.out.println(s.charAt(10));`
+25. `Integer.parseInt("abc");`
+26. `int x = Integer.parseInt(null);`
+27. `String s = null; System.out.println(s.toUpperCase());`
+28. `int[] a = null; System.out.println(a.length);`
+29. `Scanner sc = new Scanner(System.in); int x = sc.nextInt();`
+30. `int[] arr = new int[-5];`
+
+---
+
+## 🔴 Level 4 (Logical + Tricky Errors)
+
+31. `System.out.println(10/3);`
+32. `System.out.println(10/3.0);`
+33. `System.out.println("10" + 20 + 30);`
+34. `System.out.println(10 + 20 + "30");`
+35. `int a=5; System.out.println(a++ + ++a);`
+36. `int a=5; System.out.println(++a + a++);`
+37. `System.out.println('A' + 1);`
+38. `System.out.println("A" + 1);`
+39. `System.out.println(true && false || true);`
+40. `System.out.println((true && false) || true);`
+
+---
+
+## ⚫ Level 5 (Advanced Edge Cases)
+
+41. `int a=5; a = a++ + ++a;`
+42. `int a=1; int b=a++ + ++a + a++;`
+43. `int a=10; System.out.println(a++ + ++a + a++);`
+44. `System.out.println("Result: " + 10 > 5);`
+45. `System.out.println(null + "Hello");`
+46. `System.out.println("Hello" + null);`
+47. `Scanner sc=new Scanner(System.in); int x=sc.nextInt(); String y=sc.nextLine();`
+48. `byte b=100; b *= 2;`
+49. `char c=65535; c++;`
+50. `System.out.println('A' + 'B');`
+
+---
+
+# 🧠 Part 2: MCQ Test (TCS / Infosys Style)
+
+## 1.
+
+What is the output?
+`System.out.println(10 + 20 + "30");`
+A) 3030
+B) 102030
+C) 3030
+D) 30 30
+
+---
+
+## 2.
+
+`int a = 5; System.out.println(a++ + ++a);`
+A) 11
+B) 12
+C) 13
+D) 14
+
+---
+
+## 3.
+
+`System.out.println('A' + 1);`
+A) A1
+B) 66
+C) Error
+D) 65
+
+---
+
+## 4.
+
+`System.out.println("A" + 1);`
+A) 66
+B) A1
+C) Error
+D) 65
+
+---
+
+## 5.
+
+`System.out.println(10/3);`
+A) 3
+B) 3.33
+C) Error
+D) 3.0
+
+---
+
+## 6.
+
+`System.out.println(10/3.0);`
+A) 3
+B) 3.33
+C) Error
+D) 3.0
+
+---
+
+## 7.
+
+`byte b = 127; b++;`
+A) 128
+B) -128
+C) Error
+D) 0
+
+---
+
+## 8.
+
+`String s = null; System.out.println(s);`
+A) null
+B) Error
+C) Exception
+D) blank
+
+---
+
+## 9.
+
+`System.out.println(true && false || true);`
+A) true
+B) false
+C) Error
+D) null
+
+---
+
+## 10.
+
+`int a=10; System.out.println("Value: " + a + 10 > 15);`
+A) true
+B) false
+C) Error
+D) Value: 1010
+
+---
+
+## 11.
+
+`System.out.println('A' + 'B');`
+A) AB
+B) 131
+C) Error
+D) A+B
+
+---
+
+## 12.
+
+`System.out.println("Hello" + null);`
+A) Hellonull
+B) Error
+C) nullHello
+D) Exception
+
+---
+
+## 13.
+
+`int a=5; System.out.println(a+++a);`
+A) 10
+B) 11
+C) Error
+D) 12
+
+---
+
+## 14.
+
+`System.out.println(1 + 2 + "3" + 4 + 5);`
+A) 3345
+B) 12345
+C) 3345
+D) Error
+
+---
+
+## 15.
+
+`int a=5; int b=a++ + ++a;`
+A) 11
+B) 12
+C) 13
+D) 14
+
+---
+
+---
+
+# 🎯 End Note
+
+Practice these = strong command over basics + placement readiness.
+
 
