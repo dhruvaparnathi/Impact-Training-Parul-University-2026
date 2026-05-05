@@ -10,6 +10,8 @@
 
 ---
 
+
+
 # 🔥 SECTION A: DIGIT MANIPULATION (1–50)
 
 ## Q1
