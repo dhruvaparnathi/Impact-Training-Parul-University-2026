@@ -744,6 +744,430 @@ Print a
 
 ---
 
+# 📘 PSEUDO CODE – Q63 to Q100 (Bitwise + Operator Traps)
+
+---
+
+## 🔥 Q63
+
+```
+a=5
+For i=1 to 3
+ a=a^i
+End
+Print a
+```
+
+## 🔥 Q64
+
+```
+a=4
+For i=1 to 3
+ a=a<<1
+End
+Print a
+```
+
+## 🔥 Q65
+
+```
+a=32
+For i=1 to 3
+ a=a>>1
+End
+Print a
+```
+
+## 🔥 Q66
+
+```
+a=3,b=5
+Print (a&b)+(a|b)
+```
+
+## 🔥 Q67
+
+```
+a=7,b=3
+Print a^b^a
+```
+
+## 🔥 Q68
+
+```
+a=2
+For i=1 to 3
+ a=(a<<1)^i
+End
+Print a
+```
+
+## 🔥 Q69
+
+```
+a=8
+For i=1 to 3
+ a=(a>>1)+i
+End
+Print a
+```
+
+## 🔥 Q70
+
+```
+a=5
+For i=1 to 3
+ a=(a+i)^i
+End
+Print a
+```
+
+## 🔥 Q71
+
+```
+a=6
+For i=1 to 3
+ a=(a^i)<<1
+End
+Print a
+```
+
+## 🔥 Q72
+
+```
+a=10
+For i=1 to 3
+ a=(a>>1)^i
+End
+Print a
+```
+
+## 🔥 Q73
+
+```
+a=3
+For i=1 to 3
+ a=(a<<1)+(i^1)
+End
+Print a
+```
+
+## 🔥 Q74
+
+```
+a=7
+For i=1 to 3
+ a=(a^i)+(a&1)
+End
+Print a
+```
+
+## 🔥 Q75
+
+```
+a=5
+For i=1 to 3
+ a=(a<<1)+(a^i)
+End
+Print a
+```
+
+## 🔥 Q76
+
+```
+a=12
+For i=1 to 3
+ a=(a>>1)+(a^i)
+End
+Print a
+```
+
+## 🔥 Q77
+
+```
+a=4
+For i=1 to 3
+ a=(a+i)^(a)
+End
+Print a
+```
+
+## 🔥 Q78
+
+```
+a=6
+For i=1 to 3
+ a=(a+i)^(i)
+ a=a<<1
+End
+Print a
+```
+
+## 🔥 Q79
+
+```
+a=9
+For i=1 to 3
+ a=(a>>1)+(i^a)
+End
+Print a
+```
+
+## 🔥 Q80
+
+```
+a=3
+For i=1 to 3
+ a=(a<<1)+(a&1)
+End
+Print a
+```
+
+---
+
+## 🔥 Q81–100 (Hard Bitwise + Loop Combinations)
+
+## Q81
+
+```
+a=5
+For i=1 to 3
+ For j=1 to 2
+  a=(a+i)^j
+ End
+End
+Print a
+```
+
+## Q82
+
+```
+a=2
+For i=1 to 3
+ For j=1 to 2
+  a=(a<<1)^(i+j)
+ End
+End
+Print a
+```
+
+## Q83
+
+```
+a=16
+For i=1 to 3
+ For j=1 to 2
+  a=(a>>1)+(i^j)
+ End
+End
+Print a
+```
+
+## Q84
+
+```
+a=3
+For i=1 to 3
+ For j=1 to 2
+  a=(a+i+j)^(a)
+ End
+End
+Print a
+```
+
+## Q85
+
+```
+a=4
+For i=1 to 3
+ For j=1 to 2
+  a=(a+i+j)^(i+j)
+ End
+End
+Print a
+```
+
+## Q86
+
+```
+a=6
+For i=1 to 3
+ For j=1 to 2
+  a=(a+i+j)^(j)
+ End
+End
+Print a
+```
+
+## Q87
+
+```
+a=7
+For i=1 to 3
+ For j=1 to 2
+  a=(a<<1)+(i^j)
+ End
+End
+Print a
+```
+
+## Q88
+
+```
+a=10
+For i=1 to 3
+ For j=1 to 2
+  a=(a>>1)+(i+j)
+ End
+End
+Print a
+```
+
+## Q89
+
+```
+a=5
+For i=1 to 3
+ For j=1 to 2
+  a=(a+i+j)^(a>>1)
+ End
+End
+Print a
+```
+
+## Q90
+
+```
+a=3
+For i=1 to 3
+ For j=1 to 2
+  a=(a+i+j)^(i*j)
+ End
+End
+Print a
+```
+
+## Q91
+
+```
+a=8
+For i=1 to 3
+ For j=1 to 2
+  a=(a>>1)^j
+ End
+End
+Print a
+```
+
+## Q92
+
+```
+a=2
+For i=1 to 3
+ For j=1 to 2
+  a=(a<<1)^(i)
+ End
+End
+Print a
+```
+
+## Q93
+
+```
+a=5
+For i=1 to 3
+ For j=1 to 2
+  a=(a+i+j)^(j&1)
+ End
+End
+Print a
+```
+
+## Q94
+
+```
+a=6
+For i=1 to 3
+ For j=1 to 2
+  a=(a+i+j)^(i&j)
+ End
+End
+Print a
+```
+
+## Q95
+
+```
+a=3
+For i=1 to 3
+ For j=1 to 2
+  a=(a<<1)+(i&j)
+ End
+End
+Print a
+```
+
+## Q96
+
+```
+a=4
+For i=1 to 3
+ For j=1 to 2
+  a=(a>>1)+(i&j)
+ End
+End
+Print a
+```
+
+## Q97
+
+```
+a=7
+For i=1 to 3
+ For j=1 to 2
+  a=(a+i+j)^(a&1)
+ End
+End
+Print a
+```
+
+## Q98
+
+```
+a=2
+For i=1 to 3
+ For j=1 to 2
+  a=(a<<1)+(i^j)
+ End
+End
+Print a
+```
+
+## Q99
+
+```
+a=9
+For i=1 to 3
+ For j=1 to 2
+  a=(a>>1)+(i^j)
+ End
+End
+Print a
+```
+
+## Q100
+
+```
+a=5
+For i=1 to 3
+ For j=1 to 2
+  a=(a+i+j)^(i+j)
+ End
+End
+Print a
+```
+
+
 # 🔥 SECTION C: NESTED LOOPS (101–150)
 
 ## Q101
