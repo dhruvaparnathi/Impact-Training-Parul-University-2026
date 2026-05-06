@@ -230,6 +230,115 @@ If your pseudo code is clear, your coding will be **fast, accurate, and intervie
 ---
 
 
+# 📘 Pseudo Code Problem List
+
+---
+
+# 🔥 SECTION 1: BASIC (1–30)
+
+1. Swap two numbers
+2. Check even/odd
+3. Find max of 3 numbers
+4. Sum of first N numbers
+5. Factorial
+6. Reverse number
+7. Palindrome number
+8. Count digits
+9. Sum of digits
+10. Armstrong number
+11. Fibonacci series
+12. Prime check
+13. GCD of two numbers
+14. LCM
+15. Power calculation
+16. Multiplication table
+17. Sum of even numbers
+18. Sum of odd numbers
+19. Count vowels in string
+20. Reverse string
+21. Check palindrome string
+22. ASCII value
+23. Character type check
+24. Simple interest
+25. Compound interest
+26. Temperature conversion
+27. Area of circle
+28. Largest among array
+29. Smallest in array
+30. Average of array
+
+---
+
+# 🔥 SECTION 2: INTERMEDIATE (31–80)
+
+31. Second largest element
+32. Remove duplicates
+33. Bubble sort
+34. Selection sort
+35. Linear search
+36. Binary search
+37. Matrix addition
+38. Matrix multiplication
+39. Transpose matrix
+40. Diagonal sum
+41. Count frequency
+42. Rotate array
+43. Merge arrays
+44. Intersection of arrays
+45. Union of arrays
+46. Check anagram
+47. String compression
+48. Longest word
+49. Count words
+50. Pattern printing (triangle)
+51. Pyramid pattern
+52. Diamond pattern
+53. Hollow square
+54. Pascal triangle
+55. Number pyramid
+56. Sum of series
+57. Alternate sum
+58. Check perfect number
+59. Strong number
+60. Happy number
+61. Binary to decimal
+62. Decimal to binary
+63. Bit count
+64. Toggle bits
+65. XOR logic problems
+66. Bitwise AND problems
+67. Reverse array
+68. Pair sum problem
+69. Sliding window sum
+70. Prefix sum
+71. Kadane’s algorithm
+72. Subarray sum
+73. Missing number
+74. Duplicate detection
+75. Majority element
+76. Two pointer logic
+77. Merge sorted arrays
+78. Remove element
+79. Rotate string
+80. Check rotation
+
+---
+
+## ✅ Usage
+
+* Use this list as a **practice tracker**
+* Mark problems as:
+
+  * ✅ Completed
+  * 🔁 Revision needed
+  * ❌ Not understood
+
+---
+
+🚀 Next Step: Solve each using pseudo code + convert to Java
+
+
+
 # 🔥 SECTION 1: BASIC (1–30) — COMPLETE
 
 ### 1. Swap Two Numbers
