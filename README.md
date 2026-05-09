@@ -56,6 +56,15 @@ https://drive.google.com/drive/folders/1DZoKkxpL849qnQ3kJiyEO6KbEPiHzxe9?usp=dri
 
 
 
+
+
+
+
+
+
+
+
+
 PARUL UNIVERSITY — IMPACT ASSESSMENT INSTRUCTIONS
 (Talentely | Sixphrase)
 
