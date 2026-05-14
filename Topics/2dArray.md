@@ -1,6 +1,6 @@
-Complete 2D Array Notes in Java ⭐⭐⭐
+# Complete 2D Array Notes in Java ⭐⭐⭐
 
-What is a 2D Array?
+# What is a 2D Array?
 
 A 2D array is a collection of rows and columns.
 
@@ -8,55 +8,67 @@ It looks like a table or matrix.
 
 Example:
 
+```java
 int[][] arr = {
     {1,2,3},
     {4,5,6},
     {7,8,9}
 };
+```
 
 Visualization:
 
+```text
 1 2 3
 4 5 6
 7 8 9
+```
 
-Rows = 3 Columns = 3
-
+Rows = 3
+Columns = 3
 
 ---
 
-Declaration of 2D Array
+# Declaration of 2D Array
 
+```java
 int[][] arr = new int[3][3];
+```
 
 Meaning:
 
+```text
 3 rows
 3 columns
-
+```
 
 ---
 
-Access Elements
+# Access Elements
 
+```java
 System.out.println(arr[0][0]);
+```
 
 Output:
 
+```text
 First element
-
+```
 
 ---
 
-Update Elements
+# Update Elements
 
+```java
 arr[1][2] = 50;
-
+```
 
 ---
 
-Traversing 2D Array ⭐⭐⭐
+# Traversing 2D Array ⭐⭐⭐
 
+```java
 for(int i = 0; i < arr.length; i++){
 
     for(int j = 0; j < arr[i].length; j++){
@@ -66,29 +78,36 @@ for(int i = 0; i < arr.length; i++){
 
     System.out.println();
 }
+```
 
 Explanation:
 
+```text
 i = row
 j = column
-
+```
 
 ---
 
-Row-wise Traversal
+# Row-wise Traversal
 
 Input:
 
+```text
 1 2 3
 4 5 6
 7 8 9
+```
 
 Output:
 
+```text
 1 2 3 4 5 6 7 8 9
+```
 
 Code:
 
+```java
 for(int i = 0; i < arr.length; i++){
 
     for(int j = 0; j < arr[i].length; j++){
@@ -96,18 +115,21 @@ for(int i = 0; i < arr.length; i++){
         System.out.print(arr[i][j] + " ");
     }
 }
-
+```
 
 ---
 
-Column-wise Traversal ⭐⭐⭐
+# Column-wise Traversal ⭐⭐⭐
 
 Output:
 
+```text
 1 4 7 2 5 8 3 6 9
+```
 
 Code:
 
+```java
 for(int j = 0; j < arr[0].length; j++){
 
     for(int i = 0; i < arr.length; i++){
@@ -115,24 +137,29 @@ for(int j = 0; j < arr[0].length; j++){
         System.out.print(arr[i][j] + " ");
     }
 }
-
+```
 
 ---
 
-Diagonal Traversal ⭐⭐⭐
+# Diagonal Traversal ⭐⭐⭐
 
-Main Diagonal
+# Main Diagonal
 
 Output:
 
+```text
 1 5 9
+```
 
 Condition:
 
+```java
 if(i == j)
+```
 
 Code:
 
+```java
 for(int i = 0; i < arr.length; i++){
 
     for(int j = 0; j < arr[0].length; j++){
@@ -142,22 +169,27 @@ for(int i = 0; i < arr.length; i++){
         }
     }
 }
-
+```
 
 ---
 
-Secondary Diagonal
+# Secondary Diagonal
 
 Output:
 
+```text
 3 5 7
+```
 
 Condition:
 
+```java
 if(i + j == n - 1)
+```
 
 Code:
 
+```java
 int n = arr.length;
 
 for(int i = 0; i < n; i++){
@@ -169,12 +201,13 @@ for(int i = 0; i < n; i++){
         }
     }
 }
-
+```
 
 ---
 
-Sum of All Elements
+# Sum of All Elements
 
+```java
 int sum = 0;
 
 for(int i = 0; i < arr.length; i++){
@@ -186,12 +219,13 @@ for(int i = 0; i < arr.length; i++){
 }
 
 System.out.println(sum);
-
+```
 
 ---
 
-Maximum Element
+# Maximum Element
 
+```java
 int max = arr[0][0];
 
 for(int i = 0; i < arr.length; i++){
@@ -205,12 +239,13 @@ for(int i = 0; i < arr.length; i++){
 }
 
 System.out.println(max);
-
+```
 
 ---
 
-Search in 2D Array
+# Search in 2D Array
 
+```java
 int target = 5;
 boolean found = false;
 
@@ -227,31 +262,38 @@ for(int i = 0; i < arr.length; i++){
 }
 
 System.out.println(found);
-
+```
 
 ---
 
-Matrix Transpose ⭐⭐⭐
+# Matrix Transpose ⭐⭐⭐
 
 Rows become columns.
 
 Example:
 
+```text
 1 2 3
 4 5 6
+```
 
 Becomes:
 
+```text
 1 4
 2 5
 3 6
+```
 
 Main Logic:
 
+```text
 arr[i][j] -> transpose[j][i]
+```
 
 Code:
 
+```java
 int[][] arr = {
     {1,2,3},
     {4,5,6}
@@ -279,16 +321,17 @@ for(int i = 0; i < cols; i++){
 
     System.out.println();
 }
-
+```
 
 ---
 
-In-place Transpose ⭐⭐⭐
+# In-place Transpose ⭐⭐⭐
 
 Only for square matrix.
 
 Code:
 
+```java
 for(int i = 0; i < n; i++){
 
     for(int j = i + 1; j < n; j++){
@@ -298,32 +341,39 @@ for(int i = 0; i < n; i++){
         arr[j][i] = temp;
     }
 }
-
+```
 
 ---
 
-Rotate Matrix 90 Degree Clockwise ⭐⭐⭐
+# Rotate Matrix 90 Degree Clockwise ⭐⭐⭐
 
 Example:
 
+```text
 1 2 3
 4 5 6
 7 8 9
+```
 
 Output:
 
+```text
 7 4 1
 8 5 2
 9 6 3
+```
 
 Main Logic:
 
+```text
 Transpose
 +
 Reverse every row
+```
 
 Code:
 
+```java
 int n = arr.length;
 
 // transpose
@@ -353,31 +403,38 @@ for(int i = 0; i < n; i++){
         end--;
     }
 }
-
+```
 
 ---
 
-Spiral Traversal ⭐⭐⭐
+# Spiral Traversal ⭐⭐⭐
 
 Input:
 
+```text
 1 2 3
 4 5 6
 7 8 9
+```
 
 Output:
 
+```text
 1 2 3 6 9 8 7 4 5
+```
 
 Main Idea:
 
+```text
 Top Row
 Right Column
 Bottom Row
 Left Column
+```
 
 Code:
 
+```java
 int top = 0;
 int bottom = arr.length - 1;
 
@@ -416,25 +473,30 @@ while(top <= bottom && left <= right){
         left++;
     }
 }
-
+```
 
 ---
 
-Wave Traversal ⭐⭐⭐
+# Wave Traversal ⭐⭐⭐
 
 Output:
 
+```text
 1 4 7 8 5 2 3 6 9
+```
 
 Pattern:
 
+```text
 Down
 Up
 Down
 Up
+```
 
 Code:
 
+```java
 int rows = arr.length;
 int cols = arr[0].length;
 
@@ -454,18 +516,21 @@ for(int j = 0; j < cols; j++){
         }
     }
 }
-
+```
 
 ---
 
-Boundary Traversal ⭐⭐⭐
+# Boundary Traversal ⭐⭐⭐
 
 Output:
 
+```text
 1 2 3 6 9 8 7 4
+```
 
 Code:
 
+```java
 int rows = arr.length;
 int cols = arr[0].length;
 
@@ -488,20 +553,23 @@ for(int j = cols - 2; j >= 0; j--){
 for(int i = rows - 2; i > 0; i--){
     System.out.print(arr[i][0] + " ");
 }
-
+```
 
 ---
 
-Saddle Point ⭐⭐⭐
+# Saddle Point ⭐⭐⭐
 
 Definition:
 
+```text
 Smallest in row
 AND
 Largest in column
+```
 
 Code:
 
+```java
 boolean found = false;
 
 for(int i = 0; i < rows; i++){
@@ -536,125 +604,77 @@ for(int i = 0; i < rows; i++){
 if(!found){
     System.out.println("No Saddle Point");
 }
-
+```
 
 ---
 
-Jagged Array
+# Jagged Array
 
 Rows with different column sizes.
 
+```java
 int[][] arr = {
     {1,2},
     {3,4,5},
     {6}
 };
-
-
----
-
-Time Complexities ⭐⭐⭐
-
-Operation	Complexity
-
-Traversal	O(n*m)
-Search	O(n*m)
-Transpose	O(n*m)
-Rotation	O(n²)
-Spiral Traversal	O(n*m)
-Wave Traversal	O(n*m)
-
-
+```
 
 ---
 
-Important Interview Topics ⭐⭐⭐
+# Time Complexities ⭐⭐⭐
+
+| Operation        | Complexity |
+| ---------------- | ---------- |
+| Traversal        | O(n*m)     |
+| Search           | O(n*m)     |
+| Transpose        | O(n*m)     |
+| Rotation         | O(n²)      |
+| Spiral Traversal | O(n*m)     |
+| Wave Traversal   | O(n*m)     |
+
+---
+
+# Important Interview Topics ⭐⭐⭐
 
 Focus extra on:
 
 1. Transpose
-
-
 2. Rotation
-
-
 3. Spiral Traversal
-
-
 4. Wave Traversal
-
-
 5. Boundary Traversal
-
-
 6. Search in Matrix
-
-
 7. Saddle Point
-
-
 8. Diagonal Traversal
-
-
-
 
 ---
 
-Most Asked LeetCode Problems ⭐⭐⭐
+# Most Asked LeetCode Problems ⭐⭐⭐
 
 Practice on LeetCode:
 
 1. Two Dimensional Array Traversal
-
-
 2. Matrix Diagonal Sum
-
-
 3. Transpose Matrix
-
-
 4. Spiral Matrix
-
-
 5. Rotate Image
-
-
 6. Set Matrix Zeroes
-
-
 7. Search a 2D Matrix
-
-
 8. Pascal Triangle
-
-
 9. Spiral Matrix II
-
-
 10. Toeplitz Matrix
-
-
 11. Reshape the Matrix
-
-
 12. Valid Sudoku
-
-
 13. Game of Life
-
-
 14. Matrix Block Sum
-
-
 15. Count Negative Numbers in a Sorted Matrix
-
-
-
 
 ---
 
-Best Learning Order ⭐⭐⭐
+# Best Learning Order ⭐⭐⭐
 
+```text
 Basics
 → Traversal
 → Row/Column Sum
@@ -666,43 +686,30 @@ Basics
 → Wave Traversal
 → Boundary Traversal
 → Advanced Matrix Problems
-
+```
 
 ---
 
-Important Visualization Trick ⭐⭐⭐
+# Important Visualization Trick ⭐⭐⭐
 
 Always draw indexes:
 
+```text
 (0,0) (0,1) (0,2)
 (1,0) (1,1) (1,2)
 (2,0) (2,1) (2,2)
+```
 
 This makes matrix problems much easier.
 
-
 ---
 
-Final Interview Tips ⭐⭐⭐
+# Final Interview Tips ⭐⭐⭐
 
 1. Practice dry run on paper.
-
-
 2. Understand row and column movement.
-
-
 3. Learn index manipulation.
-
-
 4. Master transpose and rotation.
-
-
 5. Spiral traversal is very important.
-
-
 6. Learn both square and rectangular matrix handling.
-
-
 7. Focus more on logic than memorizing code.
-
-
